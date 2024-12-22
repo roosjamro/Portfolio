@@ -11,6 +11,32 @@ body {
     background: url('WISH LIST.jpeg');
 }
 
+@keyframes rubberBand {
+    0%, 100% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+}
+
+.animation {
+    animation: rubberBand 1s;
+    font-size: 30px;
+}
+
 header {
     color: white;
     text-align: center;
@@ -61,6 +87,11 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-shadow: 1px 1px 2px black;
+    transition: text-shadow 0.3s ease;
 }
 
 section {
@@ -124,7 +155,7 @@ progress::-moz-progress-bar {
     background-color: #ff6f91;
 }
 
-.experience-container li {
+.experience_container li {
     padding: 10px;
     list-style-type: none;
 }
@@ -152,6 +183,11 @@ progress::-moz-progress-bar {
     padding: 20px;
     width: 300px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: scale(1.05);
 }
 
 .hobby-icon {
@@ -225,6 +261,18 @@ progress::-moz-progress-bar {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -237,4 +285,25 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+section {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0;
 }
