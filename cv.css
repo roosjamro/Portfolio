@@ -331,6 +331,15 @@ section {
         background: lightpink;
     }
 
+    .skills-language-container, .hobby-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Vaardigheden_Container, .TalenKennis_Container, .hobby-card {
+        width: 100%;
+    }
+
     footer {
         flex-direction: column;
         align-items: center;
