@@ -38,6 +38,10 @@ header {
     transform: scale(1.05);
 }
 
+.profile-photo:active {
+    box-shadow: 5px 5px 15px white;
+}
+
 h1 {
     font-size: 30px;
     text-align: center;
@@ -79,7 +83,7 @@ section {
 
 .Vaardigheden_Container, .TalenKennis_Container {
     width: 48%;
-    background-color: #ffeaf1; /* Roze tint */
+    background-color: #ffeaf1;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -87,7 +91,7 @@ section {
 
 .Vaardigheden_Container h2, .TalenKennis_Container h2 {
     text-align: center;
-    color: #ff6f91; /* Match roze kleur */
+    color: #ff6f91;
 }
 
 .Vaardigheden_Lijst, .TalenKennis_Lijst {
