@@ -338,6 +338,7 @@ section {
 
     .Vaardigheden_Container, .TalenKennis_Container, .hobby-card {
         width: 100%;
+        text-align: center;
     }
 
     footer {
