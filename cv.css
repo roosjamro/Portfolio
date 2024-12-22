@@ -224,3 +224,12 @@ progress::-moz-progress-bar {
     position: relative;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ff6f91 ;
+    color: white;
+    padding: 20px 10px;
+}
