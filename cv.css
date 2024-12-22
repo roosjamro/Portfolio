@@ -129,6 +129,14 @@ progress::-moz-progress-bar {
     list-style-type: none;
 }
 
+.experience_container li:nth-child(even) {
+    background-color: #fff5f8;
+}
+
+.experience_container li:nth-child(odd) {
+    background-color: #ffeaf1;
+}
+
 .hobby-container {
     display: flex;
     justify-content: space-around;
